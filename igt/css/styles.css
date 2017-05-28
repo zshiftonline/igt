@@ -1,0 +1,148 @@
+body{
+	background-color:#e68a00;
+}
+
+h1{
+	
+}
+
+h2{
+	
+}
+
+h3{
+	
+}
+
+p{
+	
+}
+
+hr{
+	width:auto;
+	padding:0px;
+}
+
+#page{
+	position:relative;
+	background:#ffa31a;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	height:500px;
+}
+
+#header{
+	position:relative;
+	background:#cc7a00;
+	letter-spacing:6px;
+	font-size: 32px;
+	font-weight: bold;
+	color:white;
+	text-align: center;
+	height:125px;
+}
+
+#game-title{
+	padding-top:10px;
+}
+
+#stats{
+	margin-top:-5px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:24px;
+	text-align:center;
+	color:#d9d9d9;
+	letter-spacing:-1px;
+	position:relative;
+	width:850px;
+}
+
+.block{
+	position:relative;
+	font-size:20px;
+	font-weight:normal;
+	text-align:center;
+	color:black;
+	margin-top:50px;
+	margin-bottom:10px;
+	padding:8px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	display:inline-block;
+	width:30%;
+}
+
+.blockclicker{
+	position:relative;
+	font-size:20px;
+	font-weight:normal;
+	text-align:center;
+	color:black;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:8px;
+	display:inline-block;
+}
+
+.block2{
+	position:relative;
+	font-size:20px;
+	font-weight:normal;
+	text-align:left;
+	color:black;
+	float:left;
+	margin-top:75px;
+	margin-bottom:10px;
+	padding:8px;
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-left-style:none;
+	border-right-style:solid;
+	border-width: 1px;
+	border-color: #333333;
+	width:30%;
+}
+
+.block2 h2{
+	text-align:center;
+	margin-top:-50px;
+}
+
+.block3{
+	position:relative;
+	font-size:20px;
+	font-weight:normal;
+	text-align:right;
+	color:black;
+	float:right;
+	margin-top:75px;
+	margin-bottom:10px;
+	padding:8px;
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-style:none;
+	border-width: 1px;
+	border-color: #333333;
+	width:30%;
+}
+
+.block3 h2{
+	text-align:center;
+	margin-top:-50px;
+}
+
+.label{
+	display:inline-block;
+}
+
+div.label{
+	font-size:18px;
+}

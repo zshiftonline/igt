@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Incremental Game Test</title>
+		<meta name="description" content="A simple incremental game.">
+		<meta name="author" content="erocktion">
+		<link rel="stylesheet" href="css/styles.css?v=1.0">
+	</head>
+
+	<body>
+		<div id="page">
+			<div id="header">
+				<div id="game-title">Incremental Game Test</div>
+				<div id="stats">
+					<div class="label">Money:</div>
+					<div id="money" class="label">0</div>
+				<br>
+					<div class="label">Money Per Sec:</div>
+					<div id="moneyPerSec" class="label">0</div>
+				</div>
+			</div>
+			
+			<div id="content">
+				<div id="clickables" class="blockclicker">
+					<img src="images/clicker.png" onclick="GatherMoney();">
+				</div>
+				
+				<div id="buildings" class="block2">
+				<h2>Buildings</h2>
+					<div id="Building0">
+						<input type="button" value="Lemonade Stand" onclick="Build(0);">
+						<div>
+							<div class="label">Cost:</div>
+							<div id="Building0.Cost" class="label">10</div>
+						</div>
+						<div>
+							<div class="label">Money Per Second:</div>
+							<div id="Building0.PerSec" class="label">1</div>
+						</div>
+						<div>
+							<div class="label">Buildings:</div>
+							<div id="Building0.Qty" class="label">0</div>
+						</div>
+					</div>
+				<hr>
+					<div id="Building1">
+						<input type="button" value="Recycling" onclick="Build(1);">
+						<div>
+							<div class="label">Cost:</div>
+							<div id="Building1.Cost" class="label">25</div>
+						</div>
+						<div>
+							<div class="label">Money Per Second:</div>
+							<div id="Building1.PerSec" class="label">3</div>
+						</div>
+						<div>
+							<div class="label">Buildings:</div>
+							<div id="Building1.Qty" class="label">0</div>
+						</div>
+					</div>
+				</div>
+				<div id="upgrades" class="block3">
+				<h2>Upgrades</h2>
+					this is where upgrades will go
+				</div>
+			</div>
+		</div>
+		
+	<script src="js/incremental.js"></script> 
+		
+	</body>
+
+</html>
