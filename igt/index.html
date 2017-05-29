@@ -3,6 +3,7 @@
 <html lang="en">
 
 	<head>
+        <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">	
 		<meta charset="utf-8">
 		<title>Incremental Game Test</title>
 		<meta name="description" content="A simple incremental game.">
@@ -11,21 +12,22 @@
 	</head>
 
 	<body>
+<img id = "background" src="images/background.png" >
 		<div id="page">
 			<div id="header">
-				<div id="game-title">Incremental Game Test</div>
+				<div id="game-title">Lemomasher</div>
 				<div id="stats">
-					<div class="label">Money:</div>
+					<div class="label">Lemons:</div>
 					<div id="money" class="label">0</div>
 				<br>
-					<div class="label">Money Per Sec:</div>
+					<div class="label">Lemons Per Sec:</div>
 					<div id="moneyPerSec" class="label">0</div>
 				</div>
 			</div>
 			
 			<div id="content">
 				<div id="clickables" class="blockclicker">
-					<img src="images/clicker.png" onclick="GatherMoney();">
+					<img src="images/click.png" onclick="GatherMoney();">
 				</div>
 				
 				<div id="buildings" class="block2">
@@ -37,7 +39,7 @@
 							<div id="Building0.Cost" class="label">10</div>
 						</div>
 						<div>
-							<div class="label">Money Per Second:</div>
+							<div class="label">Lemons Per Second:</div>
 							<div id="Building0.PerSec" class="label">1</div>
 						</div>
 						<div>
@@ -53,13 +55,13 @@
 							<div id="Building1.Cost" class="label">25</div>
 						</div>
 						<div>
-							<div class="label">Money Per Second:</div>
+							<div class="label">Lemons Per Second:</div>
 							<div id="Building1.PerSec" class="label">3</div>
 						</div>
 						<div>
 							<div class="label">Buildings:</div>
 							<div id="Building1.Qty" class="label">0</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 				<div id="upgrades" class="block3">
