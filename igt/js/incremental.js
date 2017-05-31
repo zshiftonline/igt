@@ -1,8 +1,22 @@
 var Timer = window.setInterval(function(){Tick()}, 1000);
 var buildings = [];
+var moneyOnClick = 1;
+var clickingCost = 1000;
+var enhancedClickingQty = 0;
 
 function GameSave(){
 	this.money = 0;
+}
+
+function EnhancedClicking(){
+	if (game.money >= clickingCost) {
+		game.money -= clickingCost;
+		moneyOnClick = moneyOnClick + 10;
+		enhancedClickingQty++;
+		document.getElementById("enhancedClickingQty").innerHTML = enhancedClickingQty;
+		document.getElementById("moneyOnClick").innerHTML = moneyOnClick;
+		Tick();
+	}
 }
 
 function Building(name,cost,persec,qty) {
@@ -13,8 +27,8 @@ function Building(name,cost,persec,qty) {
 }
 
 function InitBuildings() {
-	LoadBuilding("Lemonade Stand",10,1);
-	LoadBuilding("Recycling",25,3);
+	LoadBuilding("Lemonade Stand",25,1);
+	LoadBuilding("Recycling",100,3);
 }
 
 function LoadBuilding(name,cost,persec) {
@@ -28,7 +42,7 @@ function LoadBuilding(name,cost,persec) {
 }
 
 function GatherMoney() {
-	game.money++;
+	game.money = game.money + moneyOnClick;
 	document.getElementById("money").innerHTML = game.money;
 }
 
@@ -49,7 +63,7 @@ function Build(id) {
 			temp += buildings[i].PerSec * buildings[i].Qty
 		}
 		document.getElementById("moneyPerSec").innerHTML = temp;
-		var nextCost = Math.floor(buildings[id].Cost * Math.pow(1.05,buildings[id].Qty))
+		var nextCost = Math.floor(buildings[id].Cost * Math.pow(1.1,buildings[id].Qty))
 		document.getElementById("Building"+id+".Cost").innerHTML = nextCost;
 		buildings[id].CurrentCost = nextCost
 	};
@@ -58,4 +72,5 @@ function Build(id) {
 window.onload = function() {
 	InitBuildings();
 	window.game = new GameSave();
+	document.getElementById("moneyOnClick").innerHTML = moneyOnClick;
 };
