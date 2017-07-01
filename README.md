@@ -1,5 +1,6 @@
 NOW To Rule Them All
-MOVED TO 
+
+MOVED TO https://github.com/erocktion/torulethem
 
 # incrementalgametest
 a small incremental game project
